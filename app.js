@@ -52,15 +52,6 @@ client.on('guildMemberAdd', member => {
   channel.send(`Welcome to the server, ${member}`);
 });
 
-cnst ytdl = require('ytdl core');
-exports.run = async (client, message, args, ops) => {
-  if (!message.member.voiceChannel) return message.channel.send('Connect to a voice channel my friend.');
-  if (message.guild.me.voiceChannel) return message.channel.send('I am already connected.');
-  if (args[0]) return message.channel.send('Input a url.');
-  let validate = await ytdl.validateURL(args[0]);
-  if (!validate) return message.channel.send('Input a **valid** url.');
-  let info = await ytdl.getInfo(args[0])
-
 
 // Log our bot in using the token from https://discordapp.com/developers/applications/me
 client.login('NDkxMDMwODkzMTgwMzU0NTYy.DoE7uQ.f9oqEauLCtPIf6-BwBwkDBY-M-w');

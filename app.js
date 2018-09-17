@@ -53,5 +53,6 @@ client.on('guildMemberAdd', member => {
 });
 
 
+
 // Log our bot in using the token from https://discordapp.com/developers/applications/me
 client.login('NDkxMDMwODkzMTgwMzU0NTYy.DoE7uQ.f9oqEauLCtPIf6-BwBwkDBY-M-w');
